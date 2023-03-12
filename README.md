@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Youtube clone coding
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 목적
 
-## Available Scripts
+Youtube 클론코딩하는 프로젝트입니다. 리액트 라우터를 사용하여 라우팅하는 것과 오픈 api를 사용하여 외부 네트워크에서 데이터를 받아오는 실습을 위한 프로젝트입니다.
 
-In the project directory, you can run:
+## 주요 기능
 
-### `yarn start`
+1. 처음 페이지에서는 현재 인기있는 영상 목록들을 보여줍니다.
+2. 영상목록을 클릭하게되면 동영상과 채널명, 채널로고, 영상에 대한 설명을 보여줍니다.
+3. 우측에는 영상과 관련된 영상 목록들을 보여줍니다.
+4. 검색을 하게 되면 검색어와 관련된 영상 목록들이 나오고 영상 목록을 클릭하게 되면 2,3번의 과정이 발생합니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 사용기술
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+React, tailwindcss, Youtube api, postman, React Router, React Query(Tanstack Query)
 
-### `yarn test`
+## 배운 점
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 기존의 fetch -> axis (일일이 데이터를 json으로 반환할 필요가 없다 + 400대 에러를 throw등으로 따로 처리하지 않아도 자동으로 처리된다.
+- React Router의 navigate 또는 Link로 페이지 이동
+- api키 등 중요한 정보 env파일에 보관
+- timeago.js 라이브러리
+- useLocation()
+- mock 데이터처리 (오픈 api는 하루에 무한정 받아올 수 없다.)
+- useQuery()
+- 오픈 api 동적으로 받아오기
+- postman을 이용한 api관리
 
-### `yarn build`
+## 어려운 점
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 네트워크 통신
+- 다양한 페이지에서 공유하는 상태처리
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 더 공부할 점
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 오픈 api이외에 실시간 데이터베이스를 활용한 프로젝트
 
-### `yarn eject`
+## Deploy
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://hilarious-gaufre-e8a528.netlify.app
